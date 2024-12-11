@@ -1,0 +1,77 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff; /* Light blue background */
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff; /* White background for the form container */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    color: #0056b3; /* Dark blue color for the heading */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #0056b3; /* Dark blue color for the labels */
+}
+
+input[type="file"],
+input[type="datetime-local"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #0056b3; /* Dark blue background for the button */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #004494; /* Slightly darker blue on hover */
+}
+
+.chart-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.chart-container canvas {
+    width: 100%; /* Make the canvas width 100% of its container */
+    max-width: 400px; /* Limit the maximum width of the canvas */
+    height: auto; /* Ensure the canvas height adjusts proportionally */
+    background-color: #f0f8ff; /* Light blue background for charts */
+    border-radius: 10px;
+    padding: 10px;
+}
+
+
+
