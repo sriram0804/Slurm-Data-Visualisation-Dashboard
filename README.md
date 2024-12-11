@@ -1,4 +1,4 @@
-# Slurm-Dashboard
+# SLURM-Dashboard
 
 SLURM Data Visualization Dashboard
 This project is a Web-based dashboard for visualizing SLURM (Simple Linux Utility for Resource Management) workload manager data. It allows users to generate dynamic and interactive charts based on job metrics stored in a MySQL database. The dashboard supports user-defined inputs for time range and chart types, providing insightful visualizations for job-related analytics.
