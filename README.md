@@ -47,6 +47,7 @@ To simplify and enhance SLURM job data analysis by:
 
 ## 📁 Project Structure
 
+SLURM-Dashboard/
 ├── index.php # Main dashboard UI and form for input
 ├── data_processing.php # Backend: fetches and returns data as JSON
 ├── styles.css # Dashboard styling
