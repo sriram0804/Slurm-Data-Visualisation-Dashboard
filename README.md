@@ -1,90 +1,61 @@
-📊 SLURM-Dashboard
-Web-Based SLURM Data Visualization Dashboard
+# 📊 SLURM-Dashboard
 
-This project provides a lightweight, web-based dashboard designed for visualizing job metrics from SLURM (Simple Linux Utility for Resource Management). It enables system administrators and HPC researchers to analyze job submissions and performance data interactively through customizable charts, driven by user input.
+**A Web-Based Visualization Tool for SLURM Workload Metrics**
 
-🚀 Features
-📈 Dynamic Chart Generation
-Create interactive bar, pie, and line charts to visualize SLURM job statistics.
+The SLURM-Dashboard is a dynamic, interactive web-based platform designed to visualize SLURM (Simple Linux Utility for Resource Management) job data. Built using PHP and Chart.js, the dashboard provides system administrators and HPC users with powerful insights into job scheduling, resource usage, and workload distribution through customizable and real-time visualizations.
 
-⚙️ Customizable Inputs
-Users can specify:
+---
 
-Date Range (Start & End)
+## 🎯 Project Objective
 
-Chart Type (Bar, Pie, Line)
+To simplify and enhance SLURM job data analysis by:
 
-🔍 Data Metrics Supported
+- Querying job metrics from a **MySQL database**.
+- Providing a **user-friendly interface** to select chart types and date ranges.
+- Generating **interactive charts** to explore trends in HPC resource usage.
 
-Username vs Slots (Pie Chart)
+---
 
-Groupname vs Slots (Bar Chart)
+## ⚙️ Features
 
-Jobname vs Elapsed Time (Bar Chart)
+- **📈 Chart Generation**
+  - Visualize SLURM job statistics using:
+    - **Pie Charts** – Username vs Slots
+    - **Bar Charts** – Groupname vs Slots, Jobname vs Elapsed Time
+    - **Line Charts** – Slots vs Time of Month
 
-Slots vs Time of Month (Line Chart)
+- **🗓️ Custom Input Options**
+  - Select **start and end dates** for targeted time-range analysis.
+  - Choose the **desired chart type** from a dropdown.
 
-🖥️ Responsive UI
-Clean and interactive interface built with HTML/CSS/JavaScript.
+- **📊 Real-Time Visualization**
+  - Charts update instantly based on user input.
+  - Built with responsive, interactive components.
 
-🗂️ Repository Structure
-bash
-Copy
-Edit
-SLURM-Dashboard/
-├── index.php              # Main user interface and chart display
-├── data_processing.php    # Backend logic for data retrieval from MySQL
-├── styles.css             # Styling for dashboard layout
-├── script.js              # Frontend chart rendering and event handling
-└── README.md              # Project documentation
+---
 
-🛠️ Tech Stack
-Frontend: HTML, CSS, JavaScript
+## 🧰 Tech Stack
 
-Backend: PHP
+| Layer     | Technology     |
+|-----------|----------------|
+| Frontend  | HTML, CSS, JavaScript |
+| Backend   | PHP |
+| Database  | MySQL |
+| Charts    | [Chart.js](https://www.chartjs.org/) |
 
-Database: MySQL
+---
 
-Charting Library: Chart.js
+## 📁 Project Structure
 
-📦 Installation & Usage
-Clone the Repository
+├── index.php # Main dashboard UI and form for input
+├── data_processing.php # Backend: fetches and returns data as JSON
+├── styles.css # Dashboard styling
+├── script.js # Handles frontend chart rendering and AJAX calls
+├── README.md # Project documentation
 
-bash
-Copy
-Edit
-git clone https://github.com/sriram0804/Slurm-Dashboard.git
-cd Slurm-Dashboard
-Set Up the MySQL Database
+## 💡 Use Cases
+Monitor SLURM job patterns across users or groups.
 
-Import your SLURM job log data into MySQL.
+Identify resource hogs and optimize scheduling strategies.
 
-Ensure your table has fields like username, groupname, slots, elapsed_time, jobname, and timestamp.
-
-Configure the Database Connection
-
-Open data_processing.php.
-
-Update database credentials (host, username, password, database) accordingly.
-
-Run the Project Locally
-
-Use a local server environment like XAMPP, WAMP, or LAMP.
-
-Place the project folder in your web root directory (e.g., htdocs/).
-
-Navigate to http://localhost/Slurm-Dashboard/index.php in your browser.
-
-Generate Charts
-
-Select chart type, specify the date range, and click "Generate" to view visualizations.
-
-💡 Project Highlights
-Enables real-time SLURM data analysis through visual means.
-
-Reduces overhead for system administrators by simplifying job monitoring.
-
-Highly customizable for integrating with larger HPC monitoring solutions.
-
-Uses open-source technologies for easy deployment and collaboration.
-
+Visualize trends over time for resource planning.
